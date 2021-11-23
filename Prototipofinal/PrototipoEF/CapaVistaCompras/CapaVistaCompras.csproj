@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7A03FE91-6F66-4541-A09C-62FF24CF08A1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CapaVistaCompras</RootNamespace>
+    <AssemblyName>CapaVistaCompras</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CapaControladorCompras">
+      <HintPath>..\CapaControladorCompras\bin\Debug\CapaControladorCompras.dll</HintPath>
+    </Reference>
+    <Reference Include="CapaVista">
+      <HintPath>..\..\..\HotelSanCarlos\ProyectoHSC22021\Componentes\ConsultasInteligentes\ConsultasInteligentes\consultasinteligentes\CapaVista\bin\Debug\CapaVista.dll</HintPath>
+    </Reference>
+    <Reference Include="CapaVistaReporte">
+      <HintPath>..\..\..\HotelSanCarlos\ProyectoHSC22021\Componentes\Reporteador\ComponenteReporteador\CapaVistaReporte\bin\Debug\CapaVistaReporte.dll</HintPath>
+    </Reference>
+    <Reference Include="CapaVistaSeguridadHSC">
+      <HintPath>..\..\..\HotelSanCarlos\ProyectoHSC22021\Componentes\Seguridad\SeguridadHSC\CapaVista\bin\Debug\CapaVistaSeguridadHSC.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Area_Compras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Area_Compras.Designer.cs">
+      <DependentUpon>Area_Compras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AYUDAS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AYUDAS.Designer.cs">
+      <DependentUpon>AYUDAS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="facturaDetalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="facturaDetalle.Designer.cs">
+      <DependentUpon>facturaDetalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FacturaEncabezado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FacturaEncabezado.Designer.cs">
+      <DependentUpon>FacturaEncabezado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVentas.Designer.cs">
+      <DependentUpon>frmVentas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="reportedetalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reportedetalle.Designer.cs">
+      <DependentUpon>reportedetalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reporteDetalle1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>reporteDetalle.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reporteencabezado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reporteencabezado.Designer.cs">
+      <DependentUpon>reporteencabezado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reporteEncabezado1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>reporteEncabezado.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportesVentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reportesVentas.Designer.cs">
+      <DependentUpon>reportesVentas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteVentas.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReporteVentas.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Area_Compras.resx">
+      <DependentUpon>Area_Compras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AYUDAS.resx">
+      <DependentUpon>AYUDAS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="facturaDetalle.resx">
+      <DependentUpon>facturaDetalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FacturaEncabezado.resx">
+      <DependentUpon>FacturaEncabezado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVentas.resx">
+      <DependentUpon>frmVentas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportedetalle.resx">
+      <DependentUpon>reportedetalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reporteDetalle.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>reporteDetalle1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reporteencabezado.resx">
+      <DependentUpon>reporteencabezado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reporteEncabezado.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>reporteEncabezado1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportesVentas.resx">
+      <DependentUpon>reportesVentas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteVentas.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReporteVentas.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
